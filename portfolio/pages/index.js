@@ -6,7 +6,7 @@ import axios from 'axios';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from '@fortawesome/fontawesome-svg-core';
-config.autoAddCss = false; /* eslint-disable import/first */
+config.autoAddCss = false;  /* eslint-disable import/first */
 
 export const getStaticProps = async (context) => {
   const blogs = await axios.get(process.env.NEXT_PUBLIC_ARTICLES);
